@@ -13,13 +13,19 @@ body{
     max-width: 600px;
     height: 300px;
     width: 600px;
-    border-radius: 15px;
+    border-radius: 15px ;
+    border: aquamarine dotted;
     padding: 1em;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+}
+.h1Main{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border: royalblue double;
 }
 .imgPlay{
     
@@ -31,9 +37,10 @@ body{
     transform: translate(-50%, -50%)
 }
 .imgPlay:hover{
-    height: 200%;
-    width: 200%;
+    height: 120%;
+    width: 120%;
 }
+
 @keyframes slide{
     0%{
         background-position: 0% 0%;
