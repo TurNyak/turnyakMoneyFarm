@@ -30,6 +30,10 @@ body{
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+.imgPlay:hover{
+    height: 200%;
+    width: 200%;
+}
 @keyframes slide{
     0%{
         background-position: 0% 0%;
