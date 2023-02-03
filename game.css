@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    max-width: 200px;
+    max-height: 100px;
+    height: 100%;
+    background-image: url(gamedesign/backgroundMain.png);
+    
+    animation: slide 15s linear infinite;
+    position: static;
+    
+}
+@keyframes slide{
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 0% 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
+.img{
+    height: 40px;
+    width: 40px;
+    animation: skin 1s linear infinite;
+}
+@keyframes skin {
+    0%{
+        background-image: url(gamedesign/moneybags.png);
+    }
+    100%{
+        background-image: url(gamedesign/moneybagsHeadBot.png);
+    }
+}
