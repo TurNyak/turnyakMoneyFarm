@@ -20,17 +20,33 @@ body{
         background-position: 0% 0%;
     }
 }
-.divMain{
+p{
+    margin: 0;
+}
+.divName{
+    size:30%;
     background-color: #a3a21b;
-    border-radius: 15px;
-    height: 100px;
-    width: 200px;
-    padding: 1em;
+    border: #525207 dotted;
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+.divMain{
+    size: 30%;
+    background-color: #a3a21b;
+    border-radius: 15px;
+    height: 70%;
+    width: 300px;
+    padding: 1em;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
 }
 .img{
     height: 40px;
