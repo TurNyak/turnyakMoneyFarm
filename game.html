@@ -13,6 +13,7 @@
             </div>
             <div>
                 <a   id="body"><img class="img"></a>
+                <a   id="body"><img class="img"></a>
             </div>
     </div>
     <script>
@@ -20,18 +21,21 @@
  
  
         function makeCounter() {
-        let record= 0;
+        let record = 0;
+        let money = 0;
         for (let i=0; i<abuttons.length; i++) {
       
-        let btn = abuttons[i];
-       
+            let btn = abuttons[i];
+            
             btn.onclick = function() {
-            record ++;
-            document.getElementById("record").innerHTML = "Record :" + record;
+            (money ++)&(record ++);
+            (document.getElementById("money").innerHTML = "Money :" + money)&(document.getElementById("record").innerHTML = "Record :" + record);
+            }
+            
+            
         }
         }
- }
- makeCounter();
+        makeCounter();
     </script>
 </body>
 </html>
