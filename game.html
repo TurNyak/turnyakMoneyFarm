@@ -16,11 +16,22 @@
             </div>
     </div>
     <script>
-        var game=js.game;
-        var key=js.keyControl;
-        key.initKeyControl();
-
-        game.createLoop
+        const abuttons = document.getElementsByTagName('a');
+ 
+ 
+        function makeCounter() {
+        let record= 0;
+        for (let i=0; i<abuttons.length; i++) {
+      
+        let btn = abuttons[i];
+       
+            btn.onclick = function() {
+            record ++;
+            document.getElementById("record").innerHTML = "Record :" + record;
+        }
+        }
+ }
+ makeCounter();
     </script>
 </body>
 </html>
