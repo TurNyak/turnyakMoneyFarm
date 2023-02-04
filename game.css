@@ -20,6 +20,18 @@ body{
         background-position: 0% 0%;
     }
 }
+.divMain{
+    background-color: #a3a21b;
+    border-radius: 15px;
+    height: 100px;
+    width: 200px;
+    padding: 1em;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
 .img{
     height: 40px;
     width: 40px;
