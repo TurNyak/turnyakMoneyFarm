@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="game.css">\
+    <script src="main.js"></script>
 </head>
 <body>
     <div class="divName">
@@ -23,13 +24,19 @@
         function makeCounter() {
         let record = 0;
         let money = 0;
+        var pol;
         for (let i=0; i<abuttons.length; i++) {
       
             let btn = abuttons[i];
             
             btn.onclick = function() {
             (money ++)&(record ++);
-            (document.getElementById("money").innerHTML = "Money :" + money)&(document.getElementById("record").innerHTML = "Record :" + record);
+            (document.getElementById("money").innerHTML = "Money :" + money)&(document.getElementById("record").innerHTML = "Record :" + record) ;
+            if(record>localStorage.getItem('top20')){
+                pol=record;
+                localStorage.setItem('top20',pol)
+            }
+            console.log(pol)
             }
             
             
