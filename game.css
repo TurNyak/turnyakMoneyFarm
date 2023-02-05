@@ -63,12 +63,30 @@ p{
     transform: translate(-50%, -50%);
     display: inline-block;
 }
+img{
+    height: 40px;
+    width: 40px;
+    background-image: url(gamedesign/img+.png);
+}
 .img{
     height: 40px;
     width: 40px;
-    animation: skin 1s linear infinite;
+    background-image: url(gamedesign/img+.png);
 }
-@keyframes skin {
+.img1{
+    
+    animation: moneybags 0.4s linear infinite;
+}
+.img2{
+    
+    animation: moneybags 0.4s linear infinite;
+}
+.img3{
+    height: 40px;
+    width: 40px;
+    background-image: url(gamedesign/burglar.png);
+}
+@keyframes moneybags {
     0%{
         background-image: url(gamedesign/moneybags.png);
     }
