@@ -24,24 +24,24 @@
         
  
         function makeCounter() {
-        let record = 0;
-        let money = 30;
+        let record = -1;
+        let money = 29;
         var pol;
-        let rock=2;
-        
-        
+        let rockStorage=sessionStorage.getItem('rock');
+        let rock=1;
         for (let i=0; i<abuttons.length; i++) {
             
             let btn = abuttons[i];
             
             btn.onclick = function() {
-            (money +=rock)&(record ++);
+            (money +=rock)&(record +=rock);
             (document.getElementById("money").innerHTML = "Money :" + money)&(document.getElementById("record").innerHTML = "Record :" + record) ;
             localStorage.setItem('money',money)
             if(localStorage.getItem('to')!=null){
                 money-=30;
                 to++;
-                localStorage.removeItem('to')       
+                localStorage.removeItem('to') 
+                rock*=2;      
             }
             if(record>localStorage.getItem('top20')){
                 pol=record;
