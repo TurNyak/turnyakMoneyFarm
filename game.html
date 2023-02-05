@@ -14,34 +14,40 @@
             </div>
             <div>
                 <img class="img1">
-                <a onclick="img1()"><img class="img"></a>
+                <img onclick="img1()" class="img">
+                <img onclick="img2()" class="img">
                 <a><img></a>
-                <button>Worcked</button>
+                <button>wass Work</button>
             </div>
     </div>
     <script>
         const abuttons = document.getElementsByTagName('button');
         
- 
+        console.log(sessionStorage.getItem('to'))
         function makeCounter() {
-        let record = -1;
-        let money = 29;
+        let record = 0;
+        let money = 0;
         var pol;
-        let rockStorage=sessionStorage.getItem('rock');
-        let rock=1;
+        let rock=-1;
         for (let i=0; i<abuttons.length; i++) {
-            
+    
             let btn = abuttons[i];
             
+            if(sessionStorage.getItem('to')!=null){
+                rock+=2;
+            }
             btn.onclick = function() {
             (money +=rock)&(record +=rock);
             (document.getElementById("money").innerHTML = "Money :" + money)&(document.getElementById("record").innerHTML = "Record :" + record) ;
             localStorage.setItem('money',money)
-            if(localStorage.getItem('to')!=null){
+            if(sessionStorage.getItem('to')!=null){
                 money-=30;
-                to++;
-                localStorage.removeItem('to') 
-                rock*=2;      
+                to++; 
+                sessionStorage.removeItem('to')
+                
+            }
+            if(money<0){
+                money+=30;
             }
             if(record>localStorage.getItem('top20')){
                 pol=record;
