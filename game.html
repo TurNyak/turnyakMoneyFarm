@@ -9,12 +9,13 @@
     </div>
     <div class="divMain">
             <div>
-                <p id="record">Record :</p>
-                <p id="money">Money :</p>
+                <p id="record">Record :0</p>
+                <p id="money">Money :0</p>
             </div>
             <div>
-                <a onclick="lert()" ><img class="img"></a>
-                <a   id="body"><img class="img"></a>
+                <img class="img1">
+                <a onclick="img1()"><img class="img"></a>
+                <a><img></a>
                 <button>Worcked</button>
             </div>
     </div>
@@ -26,6 +27,7 @@
         let record = 0;
         let money = 30;
         var pol;
+        let rock=2;
         
         
         for (let i=0; i<abuttons.length; i++) {
@@ -33,13 +35,13 @@
             let btn = abuttons[i];
             
             btn.onclick = function() {
-            (money ++)&(record ++);
+            (money +=rock)&(record ++);
             (document.getElementById("money").innerHTML = "Money :" + money)&(document.getElementById("record").innerHTML = "Record :" + record) ;
             localStorage.setItem('money',money)
             if(localStorage.getItem('to')!=null){
                 money-=30;
                 to++;
-                localStorage.clear('to')       
+                localStorage.removeItem('to')       
             }
             if(record>localStorage.getItem('top20')){
                 pol=record;
