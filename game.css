@@ -1,96 +1,104 @@
-body{
-    background-color: black;
-    max-width: 200px;
-    max-height: 100px;
-    height: 100%;
-    background-image: url(gamedesign/backgroundMain.png);
-    
-    animation: slide 15s linear infinite;
-    position: static;
-    
+body {
+	background-color: black;
+	max-width: 200px;
+	max-height: 100px;
+	height: 100%;
+	background-image: url(gamedesign/backgroundMain.png);
+
+	animation: slide 15s linear infinite;
+	position: static;
 }
-button{
-    background-color: #ccff00;
-    border: none;
-    color: #454d2c;
-    padding:   15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius:15px;
-    bottom: 0;
-    position: absolute;
+button {
+	background-color: #ccff00;
+	border: none;
+	color: #454d2c;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 15px;
+	bottom: 0;
+	position: absolute;
 }
-@keyframes slide{
-    0%{
-        background-position: 0% 0%;
-    }
-    50%{
-        background-position: 0% 100%;
-    }
-    100%{
-        background-position: 0% 0%;
-    }
+@keyframes slide {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 0% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
 }
-p{
-    margin: 0;
+p {
+	margin: 0;
 }
-.divName{
-    size:30%;
-    background-color: #a3a21b;
-    border: #525207 dotted;
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    display: inline-block;
+.divName {
+	size: 30%;
+	background-color: #a3a21b;
+	border: #525207 dotted;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	display: inline-block;
 }
-.divMain{
-    size: 30%;
-    background-color: #a3a21b;
-    border-radius: 15px;
-    height: 70%;
-    width: 300px;
-    padding: 1em;
-    position: absolute;
-    top: 52%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    display: inline-block;
+.divMain {
+	size: 30%;
+	background-color: #a3a21b;
+	border-radius: 15px;
+	height: 70%;
+	width: 300px;
+	padding: 1em;
+	position: absolute;
+	top: 52%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	display: inline-block;
 }
-img{
-    height: 40px;
-    width: 40px;
-    background-image: url(gamedesign/img+.png);
+img {
+	height: 40px;
+	width: 40px;
+	background-image: url(gamedesign/img+.png);
 }
-.img{
-    height: 40px;
-    width: 40px;
-    background-image: url(gamedesign/img+.png);
+.cashier {
+	animation: cashierAnimation 0.9s linear infinite;
 }
-.img1{
-    
-    animation: moneybags 0.4s linear infinite;
+@keyframes cashierAnimation {
+	0% {
+		background-image: url(gamedesign/cashier.png);
+	}
+	100% {
+		background-image: url(gamedesign/cashierMove.png);
+	}
 }
-.img2{
-    
-    animation: moneybags 0.4s linear infinite;
+.loader {
+	background-image: url(gamedesign/loaderCost.png);
 }
-.img3{
-    height: 40px;
-    width: 40px;
-    background-image: url(gamedesign/burglar.png);
+
+@keyframes loaderAnimation {
+	0% {
+		background-image: url(gamedesign/loader.png);
+	}
+	100% {
+		background-image: url(gamedesign/loaderMove.png);
+	}
 }
+.moneybags {
+	animation: moneybags 0.4s linear infinite;
+}
+
 @keyframes moneybags {
-    0%{
-        background-image: url(gamedesign/moneybags.png);
-    }
-    100%{
-        background-image: url(gamedesign/moneybagsHeadBot.png);
-    }
+	0% {
+		background-image: url(gamedesign/moneybags.png);
+	}
+	100% {
+		background-image: url(gamedesign/moneybagsHeadBot.png);
+	}
 }
