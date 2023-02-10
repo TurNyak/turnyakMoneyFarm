@@ -67,10 +67,19 @@ img {
 	width: 40px;
 	background-image: url(gamedesign/img+.png);
 }
-.upgrade{
-	background-image: url(gamedesign/upgrate1.png);
+.upgrade1{
+	background-color: #33b249;
+	border-radius: #1a7729 4px;
 	height: 20px;
 	width: 40px;
+	font-size: 80%;
+}
+.upgrade{
+	background-color: #282c29;
+	border-radius: #1c241d 4px;
+	height: 20px;
+	width: 40px;
+	font-size: 80%;
 }
 .cashier {
 	float:left;
