@@ -15,18 +15,28 @@
             <p id="record">Record :0</p>
             <p id="money">Money :0</p>
         </div>
-        <div>
-            <div style="display: flex;">   
-                <img class="cashier">
-                <div style="display:inline-table;width: 60px;">
-                    <p style="float:left">Cost : 20</p>
-                    <img onclick="upgradeCashier()" id="upgradeCashier" class="upgrade">
+        <div style="display: flex;">
+            <div style="display:inline-table;width: 50px;">   
+                <div >
+                    <img class="cashier">
+                    <a onclick='upgrateCashier()' id="upgradeCashier" class="upgrade1">Upgrate<br>Cost:20</a>
                 </div>    
             </div>
-                <img onclick='loader()' id="loader" class="loader">
-                <img onclick="img2()" class="img">
-                <img onclick="m1()" id="m1" class="img">
-                <button>Will Working</button>
+            <div style="display:inline-table;width: 50px;">   
+                <div >
+                    <img onclick='loader()' id="loader" class="loader">
+                    <a onclick='upgrateLoader()' id="upgrateLoader" class="upgrade">Upgrate<br>Cost:40</a>
+                </div>    
+            </div>
+            <div style="display:inline-table;width: 50px;">   
+                <div >
+                    <img onclick='loader()' id="loader" class="loader">
+                    <a onclick='upgrateLoader()' id="upgrateLoader" class="upgrade">Upgrate<br>Cost:20</a>
+                </div>    
+            </div>
+                
+                
+                <button>Will Worked</button>
         </div>
     </div>
     <script>
