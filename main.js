@@ -9,6 +9,7 @@ var cashier1 = 0;
 function upgrateCashier(){
 	if (cashier1 == 0){
 		if(localStorage.getItem('money') >= 20){
+			document.getElementById('upgradeCashier').innerHTML = "Upgrate<br>Cost:40";
 			theSalary++
 			cashier1++
 			money-=20
@@ -23,12 +24,23 @@ function loader() {
 			loader1++
 			document.getElementById('loader').style =
 				'height: 40px;width: 40px;animation:loaderAnimation 0.9s linear infinite;'
+			document.getElementById('upgrateLoader').style =
+				'background-color: #33b249;'
 			money -= 50
-			theSalary++
+			theSalary+=2
 		}
 	}
 }
 
+function upgrateLoader(){
+	if (loader1 == 1){
+		if(localStorage.getItem('money') >= 40){
+			theSalary+=2
+			loader1++
+			money-=40
+		}
+	}
+}
 const abuttons = document.getElementsByTagName('button')
 
 console.log(sessionStorage.getItem('to'))
