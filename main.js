@@ -5,13 +5,24 @@ let record = 0
 let money = 0
 let theSalary = 1
 
+var cashier1 = 0;
+function upgrateCashier(){
+	if (cashier1 == 0){
+		if(localStorage.getItem('money') >= 20){
+			theSalary++
+			cashier1++
+			money-=20
+		}
+	}
+}
+
 var loader1 = 0
 function loader() {
 	if (loader1 == 0) {
 		if (localStorage.getItem('money') >= 50) {
 			loader1++
 			document.getElementById('loader').style =
-				'height: 40px;width: 40px;animation:loaderAnimation 0.4s linear infinite;'
+				'height: 40px;width: 40px;animation:loaderAnimation 0.9s linear infinite;'
 			money -= 50
 			theSalary++
 		}
