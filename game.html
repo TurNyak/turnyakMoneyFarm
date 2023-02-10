@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+    <title>Turnyak Money Farm</title>
     <link rel="stylesheet" href="game.css">
     <script src="main.js"></script>
 </head>
@@ -15,11 +16,17 @@
             <p id="money">Money :0</p>
         </div>
         <div>
-            <img class="cashier">
-            <img onclick='loader()' id="loader" class="loader">
-            <img onclick="img2()" class="img">
-            <img onclick="m1()" id="m1" class="img">
-            <button>Will Working</button>
+            <div style="display: flex;">   
+                <img class="cashier">
+                <div style="display:inline-table;width: 60px;">
+                    <p style="float:left">Cost : 20</p>
+                    <img onclick="upgradeCashier()" id="upgradeCashier" class="upgrade">
+                </div>    
+            </div>
+                <img onclick='loader()' id="loader" class="loader">
+                <img onclick="img2()" class="img">
+                <img onclick="m1()" id="m1" class="img">
+                <button>Will Working</button>
         </div>
     </div>
     <script>
